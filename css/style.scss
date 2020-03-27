@@ -5,6 +5,7 @@ $introColor: #ffffff;
 $colorText: #87949e;
 $colorTitle: #576671;
 $colorGreen: #17daa3;
+$colorBackground: #edeff1;
 
 // Global
 
@@ -18,16 +19,43 @@ body {
   margin: 0;
   text-align: center;
   font-family: $mainFont;
+  background-color: $colorBackground;
 }
 
 // Links
 a {
-  color: $colorText;
   text-decoration: none;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
-a:hover {
-  opacity: 0.9;
+// Section intro
+
+.intro {
+  background-image: url("../images/background-intro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-items ul {
+  list-style-type: none;
+  display: inline-block;
+  list-style-type: none;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: $introColor;
+  font-weight: 700;
+  margin: 65px;
+  padding: 0 11px;
+  li a {
+    color: $colorText;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
 }
 
 // Images

@@ -1,11 +1,10 @@
 // Variables
 
 $mainFont: "Raleway", sans-serif;
-$introColor:#ffffff;
-$colorText:#87949e;
-$colorTitle:#576671;
-$colorGreen:#17daa3;
-
+$introColor: #ffffff;
+$colorText: #87949e;
+$colorTitle: #576671;
+$colorGreen: #17daa3;
 
 // Global
 
@@ -19,4 +18,27 @@ body {
   margin: 0;
   text-align: center;
   font-family: $mainFont, Arial;
+}
+
+// Links
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Grid
+.container{
+    max-width:1140px;
+    width:100%;
+    margin:0 auto;
+
 }

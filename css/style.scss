@@ -6,6 +6,7 @@ $colorText: #87949e;
 $colorTitle: #576671;
 $colorGreen: #17daa3;
 $colorBackground: #edeff1;
+$imageIntro: url("../images/background-intro.png");
 
 // Global
 
@@ -17,47 +18,53 @@ $colorBackground: #edeff1;
 
 body {
   margin: 0;
+  font-size: 16px;
   text-align: center;
   font-family: $mainFont;
-  background-color: $colorBackground;
+}
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+section {
+  padding: 30px 0;
 }
 
-// Links
-a {
-  text-decoration: none;
-  &:hover {
-    opacity: 0.9;
+.button {
+  width: 183px;
+  height: 47px;
+  border-radius: 23px;
+  background-color: rgba(0, 182, 203, 0);
+  border: 2px solid $introColor;
+
+  .button-intro {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    font-weight: 700;
   }
 }
 
 // Section intro
 
-.intro {
-  background-image: url("../images/background-intro.png");
+header {
+  background-image: $imageIntro;
   background-repeat: no-repeat;
   background-size: cover;
-}
+  width: 100%;
 
-.menu-items ul {
-  list-style-type: none;
-  display: inline-block;
-  list-style-type: none;
-  font-size: 14px;
-  letter-spacing: 0px;
-  line-height: 24px;
-  color: $introColor;
-  font-weight: 700;
-  margin: 65px;
-  padding: 0 11px;
-  li a {
-    color: $colorText;
-    text-decoration: none;
-    &:hover {
-      opacity: 0.9;
+  nav {
+    float: right;
+    ul {
+      list-style: none;
+      padding-left: 0;
+      li a {
+        display: inline-block;
+      }
     }
   }
 }
-
 // Images
 img {
   max-width: 100%;
@@ -67,6 +74,6 @@ img {
 // Grid
 .container {
   max-width: 1140px;
-  width: 100%;
+  padding: 0 20px;
   margin: 0 auto;
 }

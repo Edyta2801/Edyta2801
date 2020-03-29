@@ -23,7 +23,7 @@ body {
   font-family: $mainFont;
 }
 .container {
-  max-width: 1140px;
+  max-width: 1470px;
   width: 100%;
   margin: 0 auto;
 }
@@ -50,6 +50,7 @@ section {
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 // Section intro
@@ -57,8 +58,10 @@ img {
 section.intro {
   background-image: $imageIntro;
   background-size: cover;
-  max-height: 1068px;
-  max-width: 2000px;
+  background-position: center;
+  height: 100%vh;
+ object-fit: cover;
+
 }
 header {
   // width: 100%;
@@ -66,12 +69,20 @@ header {
   nav {
     float: right;
     ul {
+      display: inline-flex;
       list-style: none;
       padding-left: 0;
       li a {
-        display: inline-block;
         text-decoration: none;
         color: $introColor;
+        width: 11px;
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 24px;
+     margin:0 30px;
+        font-family: "Raleway";
+        font-weight: 700;
+        text-align: center;
         &:hover {
           opacity: 0.9;
         }

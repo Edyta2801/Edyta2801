@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1470px;
   width: 100%;
   margin: 0 auto;
 }
@@ -40,13 +40,17 @@ section {
 img {
   max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section.intro {
   background-image: url("../images/background-intro.png");
   background-size: cover;
-  max-height: 1068px;
-  max-width: 2000px;
+  background-position: center;
+  height: 100%vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header nav {
@@ -54,14 +58,24 @@ header nav {
 }
 
 header nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   list-style: none;
   padding-left: 0;
 }
 
 header nav ul li a {
-  display: inline-block;
   text-decoration: none;
   color: #ffffff;
+  width: 11px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  margin: 0 30px;
+  font-family: "Raleway";
+  font-weight: 700;
+  text-align: center;
 }
 
 header nav ul li a:hover {

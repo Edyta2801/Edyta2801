@@ -14,7 +14,7 @@ body {
 
 .container {
   max-width: 1140px;
-  padding: 0 20px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -37,11 +37,16 @@ section {
   font-weight: 700;
 }
 
-header {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section.intro {
   background-image: url("../images/background-intro.png");
-  background-repeat: no-repeat;
   background-size: cover;
-  height: 1068px;
+  max-height: 1068px;
+  max-width: 2000px;
 }
 
 header nav {
@@ -55,16 +60,11 @@ header nav ul {
 
 header nav ul li a {
   display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  max-width: 1140px;
-  padding: 0 20px;
-  margin: 0 auto;
+header nav ul li a:hover {
+  opacity: 0.9;
 }
 /*# sourceMappingURL=style.css.map */

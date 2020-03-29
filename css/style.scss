@@ -21,11 +21,10 @@ body {
   font-size: 16px;
   text-align: center;
   font-family: $mainFont;
-
 }
 .container {
   max-width: 1140px;
-  padding: 0 20px;
+  width: 100%;
   margin: 0 auto;
 }
 section {
@@ -47,14 +46,22 @@ section {
   }
 }
 
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 // Section intro
 
-header {
+section.intro {
   background-image: $imageIntro;
-  background-repeat: no-repeat;
   background-size: cover;
+  max-height: 1068px;
+  max-width: 2000px;
+}
+header {
   // width: 100%;
-  height: 1068px;
 
   nav {
     float: right;
@@ -63,19 +70,12 @@ header {
       padding-left: 0;
       li a {
         display: inline-block;
+        text-decoration: none;
+        color: $introColor;
+        &:hover {
+          opacity: 0.9;
+        }
       }
     }
   }
-}
-// Images
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-// Grid
-.container {
-  max-width: 1140px;
-  padding: 0 20px;
-  margin: 0 auto;
 }

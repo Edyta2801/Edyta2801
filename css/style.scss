@@ -69,7 +69,33 @@ section.intro {
   height: 100vh;
   min-height: 500px;
   max-height: 1000px;
-  opacity:55%;
+  &::after{
+    content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  // background-color: rgba(0, 0, 0, 0.55);
+  // background-blend-mode: darken;
+  opacity :0.55;
+  z-index: 1;
+
+  }
+}
+
+
+
+section.intro::before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: darken;
+  z-index: 1;
 }
 header {
   // width: 100%;

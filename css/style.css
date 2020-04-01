@@ -10,16 +10,15 @@ body {
   font-size: 16px;
   text-align: center;
   font-family: "Raleway", sans-serif;
+  background: #edeff1;
+  line-height: 1.7;
+  font-size: 18px;
 }
 
 .container {
   max-width: 1470px;
   width: 100%;
   margin: 0 auto;
-}
-
-section {
-  padding: 30px 0;
 }
 
 .button {
@@ -45,12 +44,15 @@ img {
 }
 
 section.intro {
+  position: relative;
   background-image: url("../images/background-intro.png");
   background-size: cover;
   background-position: center;
-  height: 100%vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 500px;
+  max-height: 1000px;
+  opacity: 55%;
 }
 
 header nav {

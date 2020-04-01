@@ -7,6 +7,7 @@ $colorTitle: #576671;
 $colorGreen: #17daa3;
 $colorBackground: #edeff1;
 $imageIntro: url("../images/background-intro.png");
+$fontTextSize:18px;
 
 // Global
 
@@ -21,15 +22,19 @@ body {
   font-size: 16px;
   text-align: center;
   font-family: $mainFont;
+  background:$colorBackground;
+  line-height: 1.7;
+  font-size: $fontTextSize;
+
 }
 .container {
   max-width: 1470px;
   width: 100%;
   margin: 0 auto;
 }
-section {
-  padding: 30px 0;
-}
+// section {
+//   padding: 185px;
+// }
 
 .button {
   width: 183px;
@@ -56,12 +61,15 @@ img {
 // Section intro
 
 section.intro {
+  position:relative;
   background-image: $imageIntro;
   background-size: cover;
   background-position: center;
-  height: 100%vh;
- object-fit: cover;
-
+  background-attachment: fixed;
+  height: 100vh;
+  min-height: 500px;
+  max-height: 1000px;
+  opacity:55%;
 }
 header {
   // width: 100%;

@@ -64,24 +64,15 @@ section.intro {
   height: 100vh;
   max-height: 1068px;
   max-width: 2000px;
-
-  &::after {
-    content: " ";
-    position: absolute;
-    background-image: $imageIntro;
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-blend-mode: darken;
-    z-index: -1;
-  }
+  background: rgba(0, 0, 0, 0.55) $imageIntro;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
 }
 
 header {
   // width: 100%;
+  position:fixed;
 
   nav {
     float: right;
